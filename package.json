@@ -6,8 +6,7 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint --ext .ts src/",
-    "test": "jest --config jest.config.json --forceExit --coverage --verbose",
-    "serve": "tsc && cp public/* dist/ && http-server dist/"
+    "serve": "tsc && ./copy-to-serve.sh && http-server serve/"
   },
   "repository": {
     "type": "git",
@@ -20,13 +19,10 @@
   },
   "homepage": "https://github.com/LastArtistStanding/dad-zone-frontend#readme",
   "devDependencies": {
-    "@types/jest": "^25.2.3",
     "@typescript-eslint/eslint-plugin": "^3.1.0",
     "@typescript-eslint/parser": "^3.1.0",
     "eslint": "^7.2.0",
     "http-server": "^0.12.3",
-    "jest": "^26.0.1",
-    "ts-jest": "^26.1.0",
     "typescript": "^3.9.5"
   }
 }

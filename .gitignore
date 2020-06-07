@@ -1,3 +1,6 @@
+# Static files to be served by http-server
+serve/
+
 # Logs
 logs
 *.log

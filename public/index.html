@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<script src="app.js" defer></script>
+<script type="module" src="scripts/app.js" defer></script>
+
+<template id="dad-post">
+  <header>
+    <time class="post-created-at"><slot name="created-at"></slot></time>
+    <span class="post-author"><slot name="author">Anonymous</slot></span>
+    <span class="post-id"><slot name="id"></slot></span>
+  </header>
+  <slot></slot>
+</template>
 
 <h1>Hello, world!</h1>

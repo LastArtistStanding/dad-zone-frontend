@@ -6,15 +6,20 @@
     "declarationMap": true,
     "lib": ["DOM", "ES2020"],
     "module": "ES2020",
+    "noEmit": false,
     "outDir": "dist/",
-    "sourceMap": true,
     "target": "ES2020",
 
+    "sourceMap": true,
+    "sourceRoot": "/debug/source/",
+    "mapRoot": "/debug/sourcemaps/",
+
     "strict": true,
-    "baseUrl": "./src/",
+    "baseUrl": "src",
+    "rootDir": "src",
     "moduleResolution": "node"
   },
 
-  "include": ["src/**/*", "tests/**/*"],
+  "include": ["src/**/*"],
   "exclude": ["dist", "node_modules"]
 }
