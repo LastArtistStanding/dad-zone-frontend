@@ -1,0 +1,32 @@
+{
+  "name": "dad-zone-frontend",
+  "version": "0.1.0",
+  "description": "The frontend for the DAD forums, https://dad.zone.",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint --ext .ts src/",
+    "test": "jest --config jest.config.json --forceExit --coverage --verbose",
+    "serve": "tsc && cp public/* dist/ && http-server dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LastArtistStanding/dad-zone-frontend.git"
+  },
+  "author": "James Martin",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/LastArtistStanding/dad-zone-frontend/issues"
+  },
+  "homepage": "https://github.com/LastArtistStanding/dad-zone-frontend#readme",
+  "devDependencies": {
+    "@types/jest": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^3.1.0",
+    "@typescript-eslint/parser": "^3.1.0",
+    "eslint": "^7.2.0",
+    "http-server": "^0.12.3",
+    "jest": "^26.0.1",
+    "ts-jest": "^26.1.0",
+    "typescript": "^3.9.5"
+  }
+}

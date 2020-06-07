@@ -1,0 +1,18 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "brace-style": ["error", "1tbs", { "allowSingleLine": true }],
+    "comma-dangle": ["error", "only-multiline"],
+    "eol-last": ["error", "always"],
+    "max-len": ["warn", { "code": 120, "tabWidth": 2 }],
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }]
+  }
+}
